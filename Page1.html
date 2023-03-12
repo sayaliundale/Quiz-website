@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="quiz.css" />
+
+    <title>Quiz</title>
+  </head>
+  <body>
+    <div class="container1">
+      <div class="p">
+        <div class="wrapper">
+          <p id="h3"><b>Welcome!!</b></p>
+          <form>
+          <p id="P">Name :  <input type="text" id="text1" value="Enter name-"></p>
+          <hr id="hr">
+          <div class="cont">
+        <h3>Rules of Quiz</h3>
+        <h6 id="h1">You can select only one option at time.</h6>
+        <h6 id="h2">You will get 1 point for 1 question.</h6>
+      </div>
+        </form>
+        <button id="div1" onclick="myFunction()" >Start Quiz</button>
+      </div>
+    <div id="container2">
+      <div id="p1">Quiz<button id="p4"><span id="span"></span> out of 5</button> </div>
+
+      <p id="p2" class="question">Question here</p>
+      <ul>
+        <li id="p3">
+          <input type="radio" class="answer" name="answer" id="ans1" /><label
+            for="ans1"
+            id="option1"
+            >Option1</label
+          >
+        </li>
+        <li id="p3">
+          <input type="radio" class="answer" name="answer" id="ans2" /><label
+            for="ans2"
+            id="option2"
+          >Option 2</label
+          >
+        </li>
+        <li id="p3">
+          <input type="radio" class="answer" name="answer" id="ans3" /><label
+            for="ans3"
+            id="option3"
+            >Option 3</label
+          >
+        </li>
+        <li id="p3">
+          <input type="radio" class="answer" name="answer" id="ans4" /><label
+            for="ans4"
+            id="option4"
+            >Option4</label
+          >
+        </li>
+      </ul>
+      <button id="next">Next</button>
+      <button id="previous">Prev</button>
+      <button id="submit">Submit</button>
+      <div id="showscore" class="scorearea">
+        
+      </div>
+      
+    </div>
+
+    <script src="quiz.js"></script>
+  </body>
+</html>
